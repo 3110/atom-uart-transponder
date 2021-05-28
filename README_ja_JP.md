@@ -8,6 +8,8 @@ ATOM UART TransponderはATOM LiteのHY2.0-4P端子に接続されたデバイス
 
 <a href="https://gyazo.com/cef3a61db121aa842c0369612320c401"><img src="https://i.gyazo.com/cef3a61db121aa842c0369612320c401.jpg" alt="UnitV2 and ATOM Lite are connected with HY2.0-4P cable" width="320"/></a>
 
+上の写真では，UnitV2に付いている背面ブロックにLEGOのコネクター・ペグを使ってATOMを固定しています。ATOMに付いているマウントは[ATOM Mate](https://shop.m5stack.com/products/atom-mate)に入っていたものです。
+
 ## インストール
 
 [PlatformIO](https://platformio.org/)環境に対応しています。動作確認は Windows 10 上で[PlatformIO IDE for VSCode](https://platformio.org/install/ide?install=vscode)を使用して実施しています。
