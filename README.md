@@ -5,7 +5,7 @@ ATOM UART Transponder on ATOM Lite receives data via UART from a device connecte
 
 For example, UnitV2 outputs the recognized results as JSON to the HY2.0-4P terminal via UART, so you can display or process them after receiving them.
 
-[![UnitV2 and ATOM Lite are connected with HY2.0-4P cable](https://i.gyazo.com/cef3a61db121aa842c0369612320c401.jpg)](https://gyazo.com/cef3a61db121aa842c0369612320c401)
+<a href="https://gyazo.com/cef3a61db121aa842c0369612320c401"><img src="https://i.gyazo.com/cef3a61db121aa842c0369612320c401.jpg" alt="UnitV2 and ATOM Lite are connected with HY2.0-4P cable" width="320"/></a>
 
 ## Installation
 

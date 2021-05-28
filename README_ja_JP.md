@@ -6,7 +6,7 @@ ATOM UART TransponderはATOM LiteのHY2.0-4P端子に接続されたデバイス
 
 例えば，[UnitV2](https://shop.m5stack.com/products/unitv2-ai-camera-gc2145)は認識した内容をJSONでHY2.0-4Pに出力するので，それを受けとって表示したり，さらに処理を加えたりすることができます。
 
-[![UnitV2とATOM LiteをHY2.0-4Pケーブルで接続した様子](https://i.gyazo.com/cef3a61db121aa842c0369612320c401.jpg)](https://gyazo.com/cef3a61db121aa842c0369612320c401)
+<a href="https://gyazo.com/cef3a61db121aa842c0369612320c401"><img src="https://i.gyazo.com/cef3a61db121aa842c0369612320c401.jpg" alt="UnitV2 and ATOM Lite are connected with HY2.0-4P cable" width="320"/></a>
 
 ## インストール
 
