@@ -1,19 +1,18 @@
-# VSCode上のPlatformIO環境でM5Stackの開発をするための雛形
+[日本語](README_ja_JP.md)
+# ATOM UART Transponder
 
-M5Stack製品のプログラムをVSCode上のPlatformIO環境で書くための雛形です。
+ATOM UART Transponder on ATOM Lite receives data via UART from a device connected with the HY2.0-4P terminal and transmits them directly to its USB serial.
 
-1つのリポジトリで複数のM5Stack製品に対応したソースコードをビルドするのにも利用することもできます。製品依存のコードはそれぞれ「個別のソースの置き場所」に置くと，その製品がビルド対象になっているときだけコンパイルされます。共通のコードで場合分けが必要な場合は，「個別に定義される定数」で場合分けできます。
+For example, UnitV2 outputs the recognized results as JSON to the HY2.0-4P terminal via UART, so you can display or process them after receiving them.
 
-| `default_envs` | 個別のソースの置き場所 | 個別に定義される定数 |
-| :--- | :--- | :--- |
-| `m5stack`  | `src/m5stack`   | `TARGET_M5STACK`  |
-| `m5stickc` | `src/m5stickc` | `TARGET_M5STICKC` |
-| `m5atom`   | `src/m5atom`    | `TARGET_M5ATOM`   |
-| `m5paper`  | `src/m5paper`   | `TARGET_M5PAPER`  |
+## Installation
 
-VSCodeのステータスバー（画面下）にある「Switch ProjectIO Project Environment」を押すと，環境の切り替えメニューが画面上に表示され，`platformio.ino`の`default_envs`を書き換えずに環境を切り替えることができます。
+The program can be compiled on the [PlatformIO](https://platformio.org/) environment.  The test of this software was performed using  [PlatformIO IDE for VSCode](https://platformio.org/install/ide?install=vscode) on Windows 10 environment.
 
-<a href="https://gyazo.com/af334af4d5dc119864deaffbe21f44cd"><img src="https://i.gyazo.com/af334af4d5dc119864deaffbe21f44cd.png" alt="環境の切り替えメニュー" width="600"/></a>
+$ git clone https://github.com/3110/atom-uart-transponder
+$ cd atom-uart-transponder
+$ platformio run --target=upload
 
-`platformio.ino`の`[env]`セクションにある`build_flags`で`ENABLE_SERIAL_MONITOR`を定義すると，`common.h`にあるシリアル周りのマクロ定義が有効になり，シリアル表示のコードを挿入します。また，MACアドレスを表示するためのマクロ定義も追加されます。このマクロ定義を使ってデバッグ用の表示コードを書いておくと，不要なときは表示コードを挿入しないようにすることができます。
+## References
 
+* [UnitV2 recognition service: Serial read](https://docs.m5stack.com/en/quick_start/unitv2/base_functions#serial-read)
