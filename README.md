@@ -11,9 +11,11 @@ For example, UnitV2 outputs the recognized results as JSON to the HY2.0-4P termi
 
 The program can be compiled on the [PlatformIO](https://platformio.org/) environment.  The test of this software was performed using  [PlatformIO IDE for VSCode](https://platformio.org/install/ide?install=vscode) on Windows 10 environment.
 
+```
 $ git clone https://github.com/3110/atom-uart-transponder
 $ cd atom-uart-transponder
 $ platformio run --target=upload
+```
 
 ## References
 
