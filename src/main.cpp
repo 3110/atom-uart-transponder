@@ -7,7 +7,7 @@ const bool ENABLE_DISPLAY = true;
 
 const CRGB CRGB_TRANSPONDER_READY = CRGB::Blue;
 const CRGB CRGB_TRANSPONDER_NOT_RECEIVED = CRGB::Black;
-// 数値は赤だが Lite では緑に光る https://github.com/m5stack/M5Atom/issues/5
+// LED turns green instead of red. see https://github.com/m5stack/M5Atom/issues/5
 const CRGB CRGB_TRANSPONDER_RECEIVED = CRGB::Red;
 
 void setup(void)
