@@ -6,6 +6,8 @@ ATOM UART TransponderはATOM LiteのHY2.0-4P端子に接続されたデバイス
 
 例えば，[UnitV2](https://shop.m5stack.com/products/unitv2-ai-camera-gc2145)は認識した内容をJSONでHY2.0-4Pに出力するので，それを受けとって表示したり，さらに処理を加えたりすることができます。
 
+[![UnitV2とATOM LiteをHY2.0-4Pケーブルで接続した様子](https://i.gyazo.com/cef3a61db121aa842c0369612320c401.jpg)](https://gyazo.com/cef3a61db121aa842c0369612320c401)
+
 ## インストール
 
 [PlatformIO](https://platformio.org/)環境に対応しています。動作確認は Windows 10 上で[PlatformIO IDE for VSCode](https://platformio.org/install/ide?install=vscode)を使用して実施しています。
